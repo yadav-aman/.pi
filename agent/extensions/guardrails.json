@@ -1,0 +1,201 @@
+{
+  "$schema": "https://unpkg.com/@aliou/pi-guardrails@0.12.1/schema.json",
+  "applyBuiltinDefaults": true,
+  "version": "0.9.0-20260327",
+  "onboarding": {
+    "completed": true,
+    "completedAt": "2026-05-15T08:35:17.893Z",
+    "version": "0.9.0-20260327"
+  },
+  "features": {
+    "pathAccess": true
+  },
+  "pathAccess": {
+    "mode": "ask",
+    "allowedPaths": [
+      "~/.bun/install/global/node_modules/@earendil-works/",
+      "~/.agents/",
+      "/dev/null"
+    ]
+  },
+  "policies": {
+    "rules": [
+      {
+        "id": "secret-env-files",
+        "name": "Secret env files",
+        "description": "Block .env files, .dev.vars files, and variants",
+        "patterns": [
+          {
+            "pattern": ".env"
+          },
+          {
+            "pattern": ".env.*"
+          },
+          {
+            "pattern": ".dev.vars"
+          }
+        ],
+        "allowedPatterns": [
+          {
+            "pattern": ".env.example"
+          },
+          {
+            "pattern": "*.sample.env"
+          }
+        ],
+        "protection": "noAccess",
+        "onlyIfExists": true,
+        "enabled": true
+      },
+      {
+        "id": "regex-env",
+        "name": "Regex env files",
+        "description": "Regex for env files",
+        "patterns": [
+          {
+            "pattern": "^\\.env(\\..+)?$",
+            "regex": true
+          }
+        ],
+        "allowedPatterns": [
+          {
+            "pattern": "^\\.env\\.example$",
+            "regex": true
+          }
+        ],
+        "protection": "noAccess",
+        "onlyIfExists": true,
+        "enabled": true
+      },
+      {
+        "id": "ssh-keys",
+        "name": "SSH keys",
+        "description": "Block SSH private key files",
+        "patterns": [
+          {
+            "pattern": "*.pem"
+          },
+          {
+            "pattern": "*_rsa"
+          },
+          {
+            "pattern": "*_ed25519"
+          }
+        ],
+        "allowedPatterns": [
+          {
+            "pattern": "*.pub"
+          }
+        ],
+        "protection": "noAccess",
+        "onlyIfExists": true,
+        "enabled": true
+      },
+      {
+        "id": "database-files",
+        "name": "Database files",
+        "description": "Protect database files from modification",
+        "patterns": [
+          {
+            "pattern": "*.db"
+          },
+          {
+            "pattern": "*.sqlite"
+          },
+          {
+            "pattern": "*.sqlite3"
+          }
+        ],
+        "protection": "readOnly",
+        "onlyIfExists": true,
+        "enabled": true
+      },
+      {
+        "id": "shell-configs",
+        "name": "Shell configs",
+        "description": "Block shell startup and profile files that often contain secrets",
+        "patterns": [
+          {
+            "pattern": ".zshrc"
+          },
+          {
+            "pattern": ".zprofile"
+          },
+          {
+            "pattern": ".zshenv"
+          },
+          {
+            "pattern": ".zlogin"
+          },
+          {
+            "pattern": ".zlogout"
+          },
+          {
+            "pattern": ".bashrc"
+          },
+          {
+            "pattern": ".bash_profile"
+          },
+          {
+            "pattern": ".bash_login"
+          },
+          {
+            "pattern": ".bash_logout"
+          },
+          {
+            "pattern": ".profile"
+          },
+          {
+            "pattern": ".inputrc"
+          },
+          {
+            "pattern": ".mkshrc"
+          },
+          {
+            "pattern": ".cshrc"
+          },
+          {
+            "pattern": ".tcshrc"
+          },
+          {
+            "pattern": ".xonshrc"
+          },
+          {
+            "pattern": "config.fish"
+          }
+        ],
+        "protection": "noAccess",
+        "onlyIfExists": true,
+        "enabled": true
+      },
+      {
+        "id": "regex-shell-configs",
+        "name": "Regex shell configs",
+        "description": "Regex for shell startup and profile dotfiles",
+        "patterns": [
+          {
+            "pattern": "^\\.(zshrc|zprofile|zshenv|zlogin|zlogout|bashrc|bash_profile|bash_login|bash_logout|profile|inputrc|mkshrc|cshrc|tcshrc|xonshrc)$",
+            "regex": true
+          }
+        ],
+        "protection": "noAccess",
+        "onlyIfExists": true,
+        "enabled": true
+      }
+    ]
+  },
+  "permissionGate": {
+    "patterns": [
+      {
+        "pattern": "git commit",
+        "description": "Git commit",
+        "regex": true
+      },
+      {
+        "pattern": "git push",
+        "description": "Git push",
+        "regex": true
+      }
+    ]
+  }
+}

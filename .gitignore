@@ -1,0 +1,29 @@
+# everything
+*
+
+# except 
+!.gitignore
+!bun.lock
+!package.json
+!README.md
+!tsconfig.json
+
+!agent/
+!agent/AGENTS.md
+!agent/settings.json
+!agent/models.json
+!agent/pi-smart-btw.json
+!agent/caveman.json
+!agent/mcp.json
+!agent/pi-codex-conversion.json
+
+!agent/extensions/
+!agent/extensions/**
+
+!agent/prompts
+!agent/prompts/**
+
+!agent/skills
+!agent/skills/**
+
+**cache**

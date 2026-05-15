@@ -1,0 +1,15 @@
+{
+  "name": "pi",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "type-check": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@earendil-works/pi-coding-agent": "^0.74.2",
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}

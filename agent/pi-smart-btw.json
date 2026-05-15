@@ -1,0 +1,9 @@
+{
+  "model": "opencode-go/deepseek-v4-flash",
+  "provider": "",
+  "thinking": "medium",
+  "command": "pi",
+  "injectShortcut": "alt+c",
+  "dismissShortcut": "alt+x",
+  "composeShortcut": "alt+z"
+}

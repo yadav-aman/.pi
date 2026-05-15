@@ -1,0 +1,29 @@
+{
+  "providers": {
+    "opencode-go": {
+      "models": [
+        {
+          "id": "qwen3.6-plus",
+          "compat": {
+            "thinkingFormat": "qwen",
+            "cacheControlFormat": "anthropic"
+          }
+        },
+        {
+          "id": "qwen3.5-plus",
+          "compat": {
+            "thinkingFormat": "qwen",
+            "cacheControlFormat": "anthropic"
+          }
+        },
+        {
+          "id": "qwen3.7-max",
+          "compat": {
+            "thinkingFormat": "qwen",
+            "cacheControlFormat": "anthropic"
+          }
+        }
+      ]
+    }
+  }
+}

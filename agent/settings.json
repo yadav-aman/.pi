@@ -1,0 +1,126 @@
+{
+  "lastChangelogVersion": "0.75.5",
+  "defaultProvider": "openai-codex",
+  "defaultModel": "gpt-5.4",
+  "defaultThinkingLevel": "high",
+  "steeringMode": "one-at-a-time",
+  "transport": "auto",
+  "enableInstallTelemetry": false,
+  "theme": "dark",
+  "enabledModels": [
+    "opencode-go/deepseek-v4-flash",
+    "opencode-go/deepseek-v4-pro",
+    "opencode-go/kimi-k2.6",
+    "opencode-go/qwen3.6-plus",
+    "opencode-go/glm-5.1",
+    "opencode-go/minimax-m2.5",
+    "opencode-go/minimax-m2.7",
+    "opencode-go/mimo-v2.5",
+    "opencode-go/mimo-v2.5-pro",
+    "openai-codex/gpt-5.4-mini",
+    "openai-codex/gpt-5.5",
+    "openai-codex/gpt-5.4"
+  ],
+  "packages": [
+    "npm:pi-caveman",
+    "npm:pi-subagents",
+    "npm:@juicesharp/rpiv-ask-user-question",
+    "npm:pi-lens",
+    "npm:@juicesharp/rpiv-todo",
+    "npm:pi-simplify",
+    "npm:@aliou/pi-guardrails",
+    "npm:@plannotator/pi-extension",
+    "npm:context-mode",
+    "npm:pi-mcp-adapter",
+    "npm:@howaboua/pi-codex-conversion",
+    "npm:pi-add-dir",
+    "npm:pi-slopchop",
+    "npm:@davecodes/pi-dcp",
+    "npm:pi-goals",
+    "npm:pi-prompt-template-model",
+    "npm:pi-rewind",
+    "npm:@agnishc/edb-context-viewer",
+    "npm:pi-cache-graph",
+    "npm:@juicesharp/rpiv-advisor",
+    "npm:pi-hashline-edit",
+    "npm:pi-web-access",
+    "npm:pi-intercom",
+    "npm:@victor-software-house/pi-multicodex",
+    "npm:@howaboua/pi-smart-btw"
+  ],
+  "quietStartup": true,
+  "treeFilterMode": "default",
+  "doubleEscapeAction": "tree",
+  "powerline": "default",
+  "hideThinkingBlock": true,
+  "subagents": {
+    "agentOverrides": {
+      "scout": {
+        "model": "opencode-go/deepseek-v4-flash",
+        "fallbackModels": [
+          "opencode-go/qwen3.5-plus"
+        ]
+      },
+      "context-builder": {
+        "model": "opencode-go/mimo-v2.5",
+        "fallbackModels": [
+          "opencode-go/mimo-v2.5-pro",
+          "opencode-go/deepseek-v4-flash"
+        ]
+      },
+      "researcher": {
+        "model": "openai-codex/gpt-5.4-mini",
+        "fallbackModels": [
+          "opencode-go/kimi-k2.6",
+          "opencode-go/deepseek-v4-pro"
+        ],
+        "tools": [
+          "read",
+          "write",
+          "web.run",
+          "web_search",
+          "fetch_content",
+          "get_search_content",
+          "intercom"
+        ]
+      },
+      "worker": {
+        "model": "opencode-go/deepseek-v4-flash",
+        "fallbackModels": [
+          "opencode-go/deepseek-v4-pro",
+          "opencode-go/qwen3.6-plus"
+        ]
+      },
+      "planner": {
+        "model": "opencode-go/kimi-k2.6",
+        "fallbackModels": [
+          "opencode-go/glm-5.1",
+          "opencode-go/qwen3.7-max",
+          "openai-codex/gpt-5.4"
+        ]
+      },
+      "reviewer": {
+        "model": "opencode-go/deepseek-v4-pro",
+        "fallbackModels": [
+          "openai-codex/gpt-5.5",
+          "opencode-go/qwen3.7-max"
+        ]
+      },
+      "oracle": {
+        "model": "openai-codex/gpt-5.5",
+        "fallbackModels": [
+          "openai-codex/gpt-5.4",
+          "opencode-go/glm-5.1",
+          "opencode-go/qwen3.7-max"
+        ]
+      }
+    }
+  },
+  "skills": [],
+  "compaction": {
+    "enabled": true
+  },
+  "retry": {
+    "enabled": true
+  }
+}
