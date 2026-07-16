@@ -17,6 +17,9 @@
 !agent/mcp.json
 !agent/pi-codex-conversion.json
 
+!agent/agents/
+!agent/agents/**
+
 !agent/extensions/
 !agent/extensions/**
 

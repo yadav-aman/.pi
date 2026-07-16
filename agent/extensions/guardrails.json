@@ -1,7 +1,7 @@
 {
-  "$schema": "https://unpkg.com/@aliou/pi-guardrails@0.12.1/schema.json",
+  "$schema": "https://unpkg.com/@aliou/pi-guardrails@0.14.0/schema.json",
   "applyBuiltinDefaults": true,
-  "version": "0.9.0-20260327",
+  "version": "0.13.0-20260619",
   "onboarding": {
     "completed": true,
     "completedAt": "2026-05-15T08:35:17.893Z",
@@ -13,9 +13,10 @@
   "pathAccess": {
     "mode": "ask",
     "allowedPaths": [
-      "~/.bun/install/global/node_modules/@earendil-works/",
-      "~/.agents/",
-      "/dev/null"
+      {
+        "kind": "file",
+        "path": "/dev/null"
+      }
     ]
   },
   "policies": {
@@ -195,6 +196,21 @@
         "pattern": "git push",
         "description": "Git push",
         "regex": true
+      },
+      {
+        "pattern": "git add",
+        "description": "Git add",
+        "regex": true
+      },
+      {
+        "pattern": "git stage",
+        "description": "Git stage",
+        "regex": true
+      },
+      {
+        "pattern": "rm -rf /",
+        "description": "Dangerous command",
+        "regex": false
       }
     ]
   }
