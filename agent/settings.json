@@ -1,5 +1,5 @@
 {
-  "lastChangelogVersion": "0.80.7",
+  "lastChangelogVersion": "0.83.0",
   "defaultProvider": "openai-codex",
   "defaultModel": "gpt-5.6-sol",
   "defaultThinkingLevel": "medium",
@@ -19,7 +19,8 @@
     "openai-codex/gpt-5.4",
     "opencode-go/minimax-m3",
     "openai-codex/gpt-5.6-sol",
-    "openai-codex/gpt-5.6-luna"
+    "openai-codex/gpt-5.6-luna",
+    "opencode/deepseek-v4-flash-free"
   ],
   "packages": [
     "npm:@tintinweb/pi-subagents",
@@ -37,7 +38,9 @@
     "npm:pi-hashline-edit",
     "npm:pi-web-access",
     "npm:pi-btw",
-    "npm:@raquezha/noheadroom"
+    "npm:@raquezha/noheadroom",
+    "npm:pi-observational-memory",
+    "npm:pi-paster"
   ],
   "quietStartup": true,
   "treeFilterMode": "default",
@@ -51,6 +54,5 @@
   "retry": {
     "enabled": true
   },
-  "showCacheMissNotices": true,
   "collapseChangelog": true
 }

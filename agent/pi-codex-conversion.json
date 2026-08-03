@@ -11,7 +11,8 @@
     "applyPatchOnly": false,
     "viewImageOnly": false,
     "webRunOnly": false,
-    "imageGenerationOnly": false
+    "imageGenerationOnly": false,
+    "customRustBinariesDir": ""
   },
   "ui": {
     "statusLine": true,
@@ -25,14 +26,31 @@
     "backgroundShellCloseShortcut": "alt+r"
   },
   "compaction": {
-    "responsesCompaction": false
+    "responsesCompaction": true,
+    "version": "v2"
+  },
+  "beta": {
+    "codeMode": false,
+    "responsesLite": false,
+    "v2UserMessageRetention": 64
   },
   "openai": {
     "fast": false,
     "verbosity": "low",
     "forceCachedWebSockets": true,
     "webSearchModel": "gpt-5.4-mini",
-    "compactionModel": "gpt-5.6-luna",
-    "compactionReasoning": "current"
+    "harnessIdentifierHeader": false
+  },
+  "voiceFeaturesOnly": false,
+  "prompt": {
+    "heavySystemPromptOverwrite": false
+  },
+  "voice": {
+    "v3Voice": "cove",
+    "dictationShortcut": "ctrl+alt+d",
+    "realtimeShortcut": "ctrl+alt+space",
+    "muteShortcut": "ctrl+alt+m",
+    "serverShortcut": "ctrl+alt+g",
+    "dictationShortcutMode": "push"
   }
 }

@@ -22,6 +22,7 @@
 
 !agent/extensions/
 !agent/extensions/**
+herdr-agent-state.ts
 
 !agent/prompts
 !agent/prompts/**

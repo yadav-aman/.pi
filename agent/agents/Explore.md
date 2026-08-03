@@ -3,6 +3,7 @@ description: "Fast read-only search agent for locating code. Use it to find file
 display_name: Explore
 tools: read, bash, grep, find, ls
 model: opencode-go/deepseek-v4-flash
+thinking: none
 prompt_mode: replace
 ---
 
