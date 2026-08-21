@@ -18,7 +18,8 @@ Thinking and internal reasoning is allowed in any language you prefer, but all o
 Strategy:
 1. Run `git diff` to see recent changes (if applicable)
 2. Read the modified files
-3. Check for bugs, security issues, code smells
+3. Check for bugs, security issues, code smells, over-engineering and other relevant quality checks
+4. Reject any low value or obvious tests cases added, they cause un-necessary friction
 
 Output format:
 
