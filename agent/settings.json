@@ -40,7 +40,8 @@
     "npm:pi-btw",
     "npm:@raquezha/noheadroom",
     "npm:pi-observational-memory",
-    "npm:pi-paster"
+    "npm:pi-paster",
+    "npm:@narumitw/pi-caffeinate"
   ],
   "quietStartup": true,
   "treeFilterMode": "default",
