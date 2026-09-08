@@ -26,7 +26,6 @@
     "npm:@tintinweb/pi-subagents",
     "npm:@juicesharp/rpiv-ask-user-question",
     "npm:pi-lens",
-    "npm:pi-simplify",
     "npm:@aliou/pi-guardrails",
     "npm:@plannotator/pi-extension",
     "npm:pi-mcp-adapter",

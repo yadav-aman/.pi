@@ -22,6 +22,7 @@ You are the orchestrator.
 * Do not give sub-agents broad assignments such as "investigate and fix everything."
 * Prefer parallel sub-agents when their file scopes, contracts, and effects are genuinely independent.
 * A sub-agent must not modify or undo another sub-agent's work.
+* Prefer fresh context over passing on the whole history to the sub-agent.
 * Treat broad user outcomes as orchestration goals, not as single-agent tasks. Before delegating, separate work by independently reviewable outcomes and assign only one coherent outcome per sub-agent. If an assignment spans unrelated concerns, layers, or verification paths, split it first.
 * When existing progress is possible, establish the current state before delegating implementation. Scope assignments to remaining work rather than restating the full requested outcome.
 
