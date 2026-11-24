@@ -24,7 +24,6 @@
     "npm:@juicesharp/rpiv-ask-user-question",
     "npm:@aliou/pi-guardrails",
     "npm:@plannotator/pi-extension",
-    "npm:pi-mcp-adapter",
     "npm:@howaboua/pi-codex-conversion",
     "npm:pi-prompt-template-model",
     "npm:pi-rewind",
@@ -37,7 +36,9 @@
     "npm:pi-observational-memory",
     "npm:pi-paster",
     "npm:@tifan/pi-inline-skills",
-    "npm:@narumitw/pi-caffeinate"
+    "npm:@narumitw/pi-caffeinate",
+    "npm:@howaboua/pi-codex-web-run",
+    "npm:pi-lens"
   ],
   "quietStartup": true,
   "treeFilterMode": "default",
@@ -52,19 +53,15 @@
     "enabled": true
   },
   "collapseChangelog": true,
+  "tuiMode": "fullscreen",
   "extensionChangelogVersions": {
-    "{\"source\":\"npm:@tintinweb/pi-subagents\",\"scope\":\"user\"}": "0.25.0",
-    "{\"source\":\"npm:pi-lens\",\"scope\":\"user\"}": "4.4.12",
+    "{\"source\":\"npm:@tintinweb/pi-subagents\",\"scope\":\"user\"}": "0.26.0",
     "{\"source\":\"npm:@aliou/pi-guardrails\",\"scope\":\"user\"}": "0.23.0",
-    "{\"source\":\"npm:pi-mcp-adapter\",\"scope\":\"user\"}": "7.0.1",
     "{\"source\":\"npm:@howaboua/pi-codex-conversion\",\"scope\":\"user\"}": "5.0.0",
     "{\"source\":\"npm:pi-prompt-template-model\",\"scope\":\"user\"}": "0.12.3",
     "{\"source\":\"npm:@agnishc/edb-context-viewer\",\"scope\":\"user\"}": "0.21.1",
-    "{\"source\":\"npm:pi-web-access\",\"scope\":\"user\"}": "0.47.0",
-    "{\"source\":\"npm:@narumitw/pi-caffeinate\",\"scope\":\"user\"}": "0.49.15"
-  },
-  "extensions": [
-    "-builtin:mcp"
-  ],
-  "tuiMode": "fullscreen"
+    "{\"source\":\"npm:@narumitw/pi-caffeinate\",\"scope\":\"user\"}": "0.49.15",
+    "{\"source\":\"npm:@howaboua/pi-codex-web-run\",\"scope\":\"user\"}": "0.0.10",
+    "{\"source\":\"npm:pi-web-access\",\"scope\":\"user\"}": "0.48.0"
+  }
 }
