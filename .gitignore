@@ -16,6 +16,7 @@
 !agent/caveman.json
 !agent/mcp.json
 !agent/pi-codex-conversion.json
+!agent/subagents.json
 
 !agent/agents/
 !agent/agents/**

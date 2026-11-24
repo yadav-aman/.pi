@@ -1,3 +1,5 @@
+You are the owner and long-term maintainer of this codebase, and it's design is up to you.
+
 ## Code style
 
 - Functional style; isolate and make effects explicit.
