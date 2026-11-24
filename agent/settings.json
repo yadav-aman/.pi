@@ -1,31 +1,27 @@
 {
-  "lastChangelogVersion": "0.83.0",
+  "lastChangelogVersion": "1.6.0",
   "defaultProvider": "openai-codex",
   "defaultModel": "gpt-5.6-sol",
-  "defaultThinkingLevel": "medium",
+  "defaultThinkingLevel": "high",
   "steeringMode": "one-at-a-time",
   "transport": "auto",
   "enableInstallTelemetry": false,
+  "npmCommand": [
+    "pnpm"
+  ],
   "theme": "dark",
   "enabledModels": [
     "opencode-go/deepseek-v4-flash",
     "opencode-go/deepseek-v4-pro",
-    "opencode-go/kimi-k2.6",
-    "opencode-go/glm-5.1",
-    "opencode-go/mimo-v2.5",
-    "opencode-go/mimo-v2.5-pro",
-    "openai-codex/gpt-5.4-mini",
-    "openai-codex/gpt-5.5",
-    "openai-codex/gpt-5.4",
-    "opencode-go/minimax-m3",
     "openai-codex/gpt-5.6-sol",
     "openai-codex/gpt-5.6-luna",
-    "opencode/deepseek-v4-flash-free"
+    "opencode-go/muse-spark-1.3-contributor",
+    "opencode-go/mimo-v2.5",
+    "opencode-go/mimo-v2.5-pro"
   ],
   "packages": [
     "npm:@tintinweb/pi-subagents",
     "npm:@juicesharp/rpiv-ask-user-question",
-    "npm:pi-lens",
     "npm:@aliou/pi-guardrails",
     "npm:@plannotator/pi-extension",
     "npm:pi-mcp-adapter",
@@ -40,6 +36,7 @@
     "npm:@raquezha/noheadroom",
     "npm:pi-observational-memory",
     "npm:pi-paster",
+    "npm:@tifan/pi-inline-skills",
     "npm:@narumitw/pi-caffeinate"
   ],
   "quietStartup": true,
@@ -54,5 +51,20 @@
   "retry": {
     "enabled": true
   },
-  "collapseChangelog": true
+  "collapseChangelog": true,
+  "extensionChangelogVersions": {
+    "{\"source\":\"npm:@tintinweb/pi-subagents\",\"scope\":\"user\"}": "0.25.0",
+    "{\"source\":\"npm:pi-lens\",\"scope\":\"user\"}": "4.4.12",
+    "{\"source\":\"npm:@aliou/pi-guardrails\",\"scope\":\"user\"}": "0.23.0",
+    "{\"source\":\"npm:pi-mcp-adapter\",\"scope\":\"user\"}": "7.0.1",
+    "{\"source\":\"npm:@howaboua/pi-codex-conversion\",\"scope\":\"user\"}": "5.0.0",
+    "{\"source\":\"npm:pi-prompt-template-model\",\"scope\":\"user\"}": "0.12.3",
+    "{\"source\":\"npm:@agnishc/edb-context-viewer\",\"scope\":\"user\"}": "0.21.1",
+    "{\"source\":\"npm:pi-web-access\",\"scope\":\"user\"}": "0.47.0",
+    "{\"source\":\"npm:@narumitw/pi-caffeinate\",\"scope\":\"user\"}": "0.49.15"
+  },
+  "extensions": [
+    "-builtin:mcp"
+  ],
+  "tuiMode": "fullscreen"
 }

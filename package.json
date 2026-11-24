@@ -6,10 +6,10 @@
     "type-check": "tsc --noEmit"
   },
   "devDependencies": {
-    "@earendil-works/pi-coding-agent": "^0.74.2",
+    "@earendil-works/pi-coding-agent": "latest",
     "@types/bun": "latest"
   },
   "peerDependencies": {
-    "typescript": "^5"
+    "typescript": "^5.9.3"
   }
 }

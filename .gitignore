@@ -30,4 +30,7 @@ herdr-agent-state.ts
 !agent/skills
 !agent/skills/**
 
+!agent/headroom
+!agent/headroom/settings.json
+
 **cache**

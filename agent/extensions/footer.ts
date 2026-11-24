@@ -243,7 +243,14 @@ function hasNerdFonts(): boolean {
 	if (process.env.POWERLINE_NERD_FONTS === "0") return false;
 	if (process.env.GHOSTTY_RESOURCES_DIR) return true;
 	const t = (process.env.TERM_PROGRAM || "").toLowerCase();
-	return ["iterm", "wezterm", "kitty", "ghostty", "alacritty"].some((s) =>
+	return [
+		"iterm",
+		"wezterm",
+		"kitty",
+		"ghostty",
+		"alacritty",
+		"herdr",
+	].some((s) =>
 		t.includes(s),
 	);
 }

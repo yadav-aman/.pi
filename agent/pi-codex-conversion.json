@@ -51,6 +51,7 @@
     "realtimeShortcut": "ctrl+alt+space",
     "muteShortcut": "ctrl+alt+m",
     "serverShortcut": "ctrl+alt+g",
-    "dictationShortcutMode": "push"
+    "dictationShortcutMode": "push",
+    "contextReasoning": "high"
   }
 }
